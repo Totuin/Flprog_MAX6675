@@ -14,14 +14,19 @@ class FLProgMAX6675
 public:
     FLProgMAX6675(AbstractFLProgSPI *device, uint16_t pinCS);
     void begin();
-    float getTempC() { return temp; };
-    float getTempF();
+    double getTempC() { return temp; };
+    double getTempF();
     void readTemp();
+    void setReadPeriod(uint32_t period);
+    void pool();
 
 private:
     bool isReady();
+    void checkReadPeriod();
     AbstractFLProgSPI *spi;
     uint16_t pin;
-    float temp = 0;
+    double temp = 0;
     uint16_t incomingMessage;
+    uint32_t readPeriod = 0;
+    uint32_t startReadPeriod = 0;
 };
