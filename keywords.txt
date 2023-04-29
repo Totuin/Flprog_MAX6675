@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map
+#######################################
+#######################################
+# # Datatypes (KEYWORD1)
+#######################################
+FLProgMAX6675	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+getTempC	KEYWORD2
+getTempF	KEYWORD2
+pool	KEYWORD2
+readTemp	KEYWORD2
+setReadPeriod	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FLPROG_MAX6675_CONVERSION_RATIO	LITERAL1
+FLPROG_MAX6675_READ_PERIOD	LITERAL1
+FLPROG_MAX6675_SETTINGS	LITERAL1
+FLPROG_MAX6675_THERMOCOUPLE_OPEN	LITERAL1
+FLPROG_MAX6675_THERMOCOUPLE_OPEN_BIT	LITERAL1
